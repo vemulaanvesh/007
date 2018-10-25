@@ -1,3 +1,3 @@
-FROM php:7-1apache
+FROM tomcat 
 COPY scr/ /var/www/html
 EXPOSE 80
