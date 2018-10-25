@@ -6,8 +6,6 @@ RUN apt-get update \
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
  
 USER jenkins
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 COPY scr/ /var/www/html
 EXPOSE 80
 CMD ("echo", hi mama)
