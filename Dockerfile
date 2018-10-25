@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+COPY anveshvemula/g:1.0 /usr/share/nginx/html/index.html
